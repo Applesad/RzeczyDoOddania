@@ -1,0 +1,141 @@
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+}
+
+.logo {
+    height: 35px !important;
+    width: auto;
+}
+
+.biglogo {
+    height: 180px !important;
+    width: auto;
+}
+
+.con {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+#searchbar-wrapper {
+    margin-top: 50px;
+    display: flex;
+}
+#wrapper {
+    display: flex;
+    height: 500px;
+}
+#content-top {
+    position: absolute;
+    top: 0;
+}
+#content-bot {
+    position: absolute;
+    bottom: 0;
+}
+.item-image{
+    position: relative;
+    width: 50%;
+    height: 100%;
+}
+.item-content {
+    position: relative;
+    width: 40%;
+    height: 100%;
+    padding-left: 10px;
+}
+
+.item-buttons{
+    position: relative;
+    width: min-content;
+    margin: 0 !important;
+
+}
+
+.card {
+    transition: transform 0.15s ease-in, transform 0.2s ease-out;
+}
+
+    .card:hover .card-img {
+        opacity: 1;
+    }
+
+    .card:hover {
+        transform: scale(1.025);
+        box-shadow: 0 10px 20px rgba(37,33,82,.12), 0 4px 8px rgba(37,33,82,.06);
+    }
+.btn-link {
+    color: #68a675 !important;
+}
+.btn-primary {
+    background-color: #68a675 !important;
+    border-color: #68a675 !important;
+    transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+    .btn-primary:hover {
+        background-color: #5b9166 !important;
+        border-color: #497552 !important;
+    }
+
+.bg-warning {
+    --bs-bg-opacity: 1;
+    --color-warning: 255, 206, 103;
+    background-color: rgba(var(--color-warning),var(--bs-bg-opacity)) !important;
+}
+
+.nav-pills .nav-link {
+    color: #fff !important;
+    color: #68a675 !important;
+}
+
+    .nav-pills .nav-link.active, .show > .nav-link {
+        color: #fff !important;
+        background-color: #68a675 !important;
+    }
+
+.carousel {
+    width: 100% !important;
+}
+
+.content {
+    width: 100%;
+    height: auto;
+    opacity: 0;
+    visibility: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.25rem;
+}
+.content:target {
+    opacity: 1;
+    visibility: visible;
+ }
+.toright {
+    text-align:right;
+    margin-right: 5px;
+}
